@@ -2,6 +2,15 @@
 GeoTrade AI - Main Library Interface
 This module acts as the entry point for integrating GeoTrade AI into larger systems.
 """
+import sys
+import os
+
+# Add the core directory to python path so internal imports work
+current_dir = os.path.dirname(os.path.abspath(__file__))
+core_dir = os.path.join(current_dir, 'geotrade_core')
+sys.path.append(core_dir)
+
+# Now we can import from the core modules
 from services.news_aggregator import NewsAggregator
 from services.weather_service import WeatherService
 from services.llm_filter import LLMFilter
@@ -15,7 +24,10 @@ class GeoTradeSystem:
         self.weather = WeatherService()
         self.filter = LLMFilter()
         self.scorer = SeverityScorer()
-        self.db = Database()
+        
+        # Initialize DB with the correct path inside geotrade_core
+        db_path = os.path.join(core_dir, 'data', 'assessments.json')
+        self.db = Database(db_path=db_path)
         
     def analyze_risk(self, product: str, source_country: str, days_back: int = 7):
         """
@@ -29,7 +41,7 @@ class GeoTradeSystem:
         Returns:
             Dictionary containing the full assessment including summary, events, and weather
         """
-        print(f"[*] Starting analysis for {product} from {source_country}")
+        print(f"[*] Starting analysis for {product} from {source_country} to Morocco")
         
         # 1. Fetch News
         articles = self.news.fetch_news(product, source_country, days_back)
@@ -87,6 +99,7 @@ def assess_impact(product, country, days_back=7):
 if __name__ == "__main__":
     # Example usage when running standalone
     print("Testing GeoTrade AI System Integration...")
-    result = assess_impact("Electronics", "China")
+    # Example test
+    result = assess_impact("Textiles", "China")
     import json
     print(json.dumps(result, indent=2))

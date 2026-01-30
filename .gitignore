@@ -31,6 +31,9 @@ ENV/
 .DS_Store
 Thumbs.db
 
+# Geotrade Core (Hidden Implementation)
+geotrade_core/
+
 # Flask
 instance/
 .pytest_cache/

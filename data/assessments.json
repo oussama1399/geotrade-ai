@@ -1,0 +1,172 @@
+[
+    {
+        "id": 1,
+        "product": "steel",
+        "country": "france",
+        "created_at": "2026-01-30 18:37:58",
+        "overall_risk": "medium",
+        "risk_score": 6,
+        "total_events": 5,
+        "avg_severity": 4.2,
+        "summary_data": {
+            "overall_risk": "medium",
+            "risk_score": 6,
+            "top_concerns": [
+                "Rupee depreciation increasing import costs for French steel",
+                "Uncertain timing and implementation of India\u2011EU FTA benefits",
+                "Potential regulatory or tariff adjustments post\u2011FTA"
+            ],
+            "recommended_actions": [
+                "Implement currency hedging strategies to mitigate rupee risk",
+                "Track FTA negotiation milestones and engage with Indian customs to ensure smooth tariff reductions",
+                "Diversify steel sourcing to include alternative suppliers or regions to reduce exposure"
+            ],
+            "timeline": "Short\u2011term (0\u20136\u202fmonths): rupee volatility directly raises import costs; Medium\u2011term (6\u201318\u202fmonths): India\u2011EU FTA provisions begin to lower tariffs and improve market access; Long\u2011term (18\u202fmonths+): full FTA benefits realized, potentially offsetting currency risks and stabilizing steel import costs.",
+            "total_events": 5,
+            "avg_severity": 4.2,
+            "high_severity_count": 1
+        },
+        "articles": [
+            {
+                "title": "Rupee at 92/$: Imports, overseas education, travel hurt; exporters gain",
+                "description": "The rupee hitting a historic low of 92 against the US dollar on January 23 is likely to make imports ranging from crude oil to electronic goods, overseas education and foreign travel costlier, stoke inflation concerns, but may offer some relief to exporters.",
+                "content": "The rupee hitting a historic low of 92 against the US dollar on January 23 is likely to make imports ranging from crude oil to electronic goods, overseas education and foreign travel costlier, stoke \u2026 [+3053 chars]",
+                "url": "https://www.thehindubusinessline.com/markets/forex/rupee-at-92-imports-overseas-education-travel-hurt-exporters-gain/article70549024.ece",
+                "source": "BusinessLine",
+                "published_at": "2026-01-25T07:21:43Z",
+                "image_url": "https://bl-i.thgim.com/public/incoming/r4d8ig/article70549085.ece/alternates/LANDSCAPE_1200/iStock-1450948383.jpg",
+                "api_source": "NewsAPI",
+                "relevance_score": 6,
+                "relevance_reasoning": "The article discusses the rupee falling to 92 per dollar, which directly raises the cost of all imports, including steel from France. While it does not mention steel specifically, the currency depreciation is a key economic factor that would affect the price and competitiveness of imported steel.",
+                "key_factors": [
+                    "Currency depreciation affecting import costs",
+                    "Economic factor impacting import pricing"
+                ],
+                "severity_score": 7,
+                "category": "economic",
+                "impact_type": "medium_term",
+                "confidence": 75,
+                "severity_reasoning": "The rupee\u2019s historic low of 92 against the US dollar directly raises the cost of importing goods priced in foreign currencies, including steel from France (priced in euros). The exchange rate shift is immediate and will affect procurement costs as soon as the rupee weakens. While the depreciation may be temporary, the current trend suggests a medium\u2011term persistence until monetary policy or market sentiment stabilises. The impact is widespread across all import\u2011dependent operations, but can be mitigated through financial hedging, forward contracts, and supplier negotiations. Given the significant cost pressure and the potential for inflationary spill\u2011over, the event is assessed as a moderate\u2011to\u2011high severity economic risk.",
+                "recommendations": [
+                    "Implement currency hedging (forward contracts or options) to lock in exchange rates",
+                    "Negotiate price adjustments or cost\u2011sharing agreements with French suppliers",
+                    "Explore alternative suppliers or local sourcing options to reduce currency exposure",
+                    "Monitor rupee movements closely and adjust procurement schedules accordingly"
+                ],
+                "created_at": "2026-01-30 18:37:58"
+            },
+            {
+                "title": "India-EU sign \u2018mother of all deals\u2019: Stocks to buy, winners and losers",
+                "description": "India\u2019s landmark FTA with the European Union, dubbed the \u201cmother of all deals,\u201d is reshaping investor focus as tariff cuts and regulatory easing promise a structural export boost. Textiles, pharmaceuticals and specialty chemicals are the biggest near-term win\u2026",
+                "content": "India has sealed a free trade agreement (FTA) with the European Unionhailed by Prime Minister Narendra Modi as the mother of all dealstriggering a scramble among investors to identify which stocks st\u2026 [+7575 chars]",
+                "url": "https://economictimes.indiatimes.com/markets/stocks/news/india-eu-sign-mother-of-all-deals-stocks-to-buy-winners-and-losers/articleshow/127605576.cms",
+                "source": "The Times of India",
+                "published_at": "2026-01-27T07:26:16Z",
+                "image_url": "https://img.etimg.com/thumb/msid-127605547,width-1200,height-630,imgsize-2908240,overlay-etmarkets/articleshow.jpg",
+                "api_source": "NewsAPI",
+                "relevance_score": 7,
+                "relevance_reasoning": "The article discusses a new free trade agreement between India and the EU, which can directly affect tariffs, quotas, and regulatory requirements for steel imports from France. Even though the piece does not explicitly mention steel, the FTA\u2019s provisions on industrial goods are likely to influence pricing, market access, and competitive dynamics for steel products.",
+                "key_factors": [
+                    "trade policies/tariffs",
+                    "economic factors affecting imports"
+                ],
+                "severity_score": 5,
+                "category": "regulatory",
+                "impact_type": "medium_term",
+                "confidence": 70,
+                "severity_reasoning": "The India\u2011EU free trade agreement reduces tariffs on EU goods, including steel, which will lower import costs for Indian buyers. This regulatory change is likely to be implemented over the next 1\u20132 years, making its effect medium\u2011term. The impact is widespread across all EU steel imports, but the magnitude is moderate because India already imports steel from other sources and the tariff reduction is not a complete elimination. Mitigation is relatively easy: adjust pricing, renegotiate supplier contracts, and monitor tariff schedules. Overall, the event presents a moderate regulatory risk with manageable mitigation options.",
+                "recommendations": [
+                    "Monitor tariff schedules and update cost models accordingly",
+                    "Negotiate revised pricing terms with French suppliers",
+                    "Diversify steel sourcing to include non\u2011EU suppliers as a hedge",
+                    "Implement currency hedging strategies to mitigate exchange rate volatility"
+                ],
+                "created_at": "2026-01-30 18:37:58"
+            },
+            {
+                "title": "\u2018Mother of all deals\u2019: How India-EU trade deal creates $27 trillion market",
+                "description": "Major agreement reached after 20 years of negotiations and during ongoing tensions with the US.",
+                "content": "New Delhi, India India and the European Union have signed a free trade agreement that both sides have hailed as the mother of all deals.\r\nThe agreement, announced on Tuesday, came together over nearl\u2026 [+12700 chars]",
+                "url": "https://www.aljazeera.com/economy/2026/1/27/mother-of-all-deals-how-india-eu-trade-deal-creates-27-trillion-market",
+                "source": "Al Jazeera English",
+                "published_at": "2026-01-27T15:19:25Z",
+                "image_url": "https://www.aljazeera.com/wp-content/uploads/2026/01/2026-01-27T064725Z_1318997585_RC2I9JA8ANQ7_RTRMADP_3_INDIA-EU-TRADE-1769506029.jpg?resize=1200%2C630",
+                "api_source": "NewsAPI",
+                "relevance_score": 7,
+                "relevance_reasoning": "The India\u2011EU free trade agreement directly addresses trade policies and tariff structures between the EU (including France) and India. For a steel importer sourcing from France, this deal could lower or eliminate tariffs, alter customs procedures, and influence pricing and market access. While the article does not mention logistics or weather disruptions, the policy shift is a significant economic factor affecting imports.",
+                "key_factors": [
+                    "trade policies/tariffs",
+                    "economic factors affecting imports"
+                ],
+                "severity_score": 4,
+                "category": "regulatory",
+                "impact_type": "long_term",
+                "confidence": 80,
+                "severity_reasoning": "The India\u2011EU free trade agreement reduces tariffs and liberalises trade between India and the EU, including France. For steel imports from France, this is a positive regulatory change that will lower costs and potentially increase volume. The agreement was announced on 27\u202fJan\u202f2026, but implementation will take several months to a year, so the effect is not immediate. The impact is widespread across all EU steel exporters, but the benefit is specific to India\u2019s import regime. Mitigation is not required; instead, the event presents an opportunity to optimise procurement. The severity of disruption is low (score\u202f4) because the change is beneficial and gradual.",
+                "recommendations": [
+                    "Review and update tariff schedules for French steel imports",
+                    "Adjust procurement contracts to reflect lower duties",
+                    "Monitor implementation timeline and compliance requirements",
+                    "Plan inventory adjustments to take advantage of lower costs",
+                    "Engage with French suppliers to negotiate better terms"
+                ],
+                "created_at": "2026-01-30 18:37:58"
+            },
+            {
+                "title": "India-EU FTA credit positive for India; to boost manufacturing, attract foreign investment: Moody's",
+                "description": "The India-EU free trade pact will be credit positive for India as lower tariffs and better market access will help attract foreign investment, boost manufacturing and boost export competitiveness of the labour intensive sector, Moody's Ratings has said.",
+                "content": "The India-EU free trade pact will be credit positive for India as lower tariffs and better market access will help attract foreign investment, boost manufacturing and boost export competitiveness of \u2026 [+3592 chars]",
+                "url": "https://www.thehindubusinessline.com/economy/india-eu-fta-credit-positive-for-india-to-boost-manufacturing-attract-foreign-investment-moodys/article70560154.ece",
+                "source": "BusinessLine",
+                "published_at": "2026-01-28T08:15:48Z",
+                "image_url": "https://bl-i.thgim.com/public/incoming/chiq9z/article70560219.ece/alternates/LANDSCAPE_1200/2024-11-28T154013Z_1867187112_RC2EEBA08XQQ_RTRMADP_3_ISRAEL-PALESTINIANS-RATINGS.JPG",
+                "api_source": "NewsAPI",
+                "relevance_score": 8,
+                "relevance_reasoning": "The India\u2011EU free trade agreement reduces tariffs and improves market access for EU goods, directly affecting the cost and availability of steel imports from France to India. This policy change is a significant economic factor for importers.",
+                "key_factors": [
+                    "trade policies/tariffs",
+                    "economic factors"
+                ],
+                "severity_score": 3,
+                "category": "economic",
+                "impact_type": "medium_term",
+                "confidence": 85,
+                "severity_reasoning": "The India\u2011EU free trade agreement is expected to reduce tariffs and improve market access for EU goods in India. For steel imports from France, this translates into lower import duties, potentially lower landed costs and increased competitiveness of EU\u2011produced steel. The effect is likely to be realized relatively soon after the agreement takes effect, but the full benefits may accrue over a medium\u2011term horizon as customs procedures and market adjustments settle. The impact is widespread across all EU steel exporters to India, but it is largely positive for importers, not a risk. Mitigation is straightforward: adjust pricing, renegotiate contracts, and monitor tariff schedules. Overall, the event poses a low\u2011to\u2011moderate severity risk (score 3) because it is beneficial rather than harmful.",
+                "recommendations": [
+                    "Review and update import cost models to reflect new tariff rates",
+                    "Negotiate favorable terms with French suppliers based on lower duties",
+                    "Monitor customs clearance procedures for any procedural changes",
+                    "Diversify steel sourcing to include other EU countries to maximize benefits"
+                ],
+                "created_at": "2026-01-30 18:37:58"
+            },
+            {
+                "title": "Big win for Europe as it taps India\u2019s 1.45 billion consumers under historic deal",
+                "description": "India and the European Union have signed a historic free trade agreement. This deal will significantly boost European exports to India. Tariffs on many European goods will be reduced or eliminated. This includes cars, machinery, and agricultural products. The\u2026",
+                "content": "After nearly two decades of on-and-off negotiations, the European Union (EU) and India have sealed what both sides are calling a historic free trade agreement, one that dramatically tilts open the do\u2026 [+7082 chars]",
+                "url": "https://economictimes.indiatimes.com/news/economy/foreign-trade/india-eu-fta-big-win-for-europe-as-it-taps-indias-1-45-billion-consumers-under-historic/articleshow/127609592.cms",
+                "source": "The Times of India",
+                "published_at": "2026-01-27T10:37:33Z",
+                "image_url": "https://img.etimg.com/thumb/msid-127617311,width-1200,height-630,imgsize-21776,overlay-economictimes/articleshow.jpg",
+                "api_source": "NewsAPI",
+                "relevance_score": 6,
+                "relevance_reasoning": "The EU\u2011India free\u2011trade agreement can alter tariff structures and trade policies for steel imports from EU member states, including France, into India. While the article does not mention France specifically, the agreement\u2019s potential to lower duties or streamline customs procedures directly impacts pricing and availability for steel sourced from France destined for India. No direct mention of weather, political instability, or sanctions is made, so the relevance is moderate.",
+                "key_factors": [
+                    "trade policies",
+                    "tariffs"
+                ],
+                "severity_score": 2,
+                "category": "regulatory",
+                "impact_type": "medium_term",
+                "confidence": 80,
+                "severity_reasoning": "The free trade agreement between the EU and India is expected to reduce or eliminate tariffs on a wide range of European goods, including industrial commodities such as steel. While the article does not explicitly list steel, it is highly likely to be covered under the broad tariff reductions. This regulatory change will lower import costs for steel sourced from France, improving competitiveness and potentially increasing import volumes. The impact is positive but not transformative; it will unfold over several months as customs procedures and tariff schedules are updated. Consequently, the severity of the event\u2019s impact on operations is low, but it is a significant regulatory shift that warrants monitoring.",
+                "recommendations": [
+                    "Review updated tariff schedules for French steel imports to quantify cost savings",
+                    "Adjust pricing and contract terms to reflect lower duties",
+                    "Monitor implementation timeline and customs procedures to ensure smooth transition"
+                ],
+                "created_at": "2026-01-30 18:37:58"
+            }
+        ]
+    }
+]

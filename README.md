@@ -122,37 +122,76 @@ The application will start on `http://localhost:5000`
   - Impact timeline
   - Specific recommendations
 
+## Project Architecture
+
+The project contains two distinct implementations:
+
+1.  **Monolithic CLI (`main.py`)**: A self-contained script (PortNet Edition) that handles the entire pipeline—from news aggregation to operational risk scoring for the Moroccan ecosystem.
+2.  **Modular Web App (`geotrade_core/`)**: A Flask-based application structured for scalability and maintainability.
+
+---
+
+## 🛠️ Core Components (Web App)
+
+### 1. Services (`geotrade_core/services/`)
+- **News Aggregator**: Integrates with **NewsAPI** and **GNews** to fetch real-time information.
+- **LLM Filter**: Uses **Ollama** (locally hosted LLM) to filter news articles for relevance based on product and source country.
+- **Severity Scorer**: Assesses the impact of relevant events using LLM prompts tuned for Moroccan trade routes and logistics.
+- **Weather Service**: Integrates with **WeatherAPI.com** to provide rule-based risk scoring for weather-related disruptions.
+
+### 2. Data Management
+- **Database (`geotrade_core/models/database.py`)**: A lightweight JSON-based storage for persistence (replaces the original SQLite implementation for simpler deployment).
+- **Configuration (`geotrade_core/config.py`)**: Centralized management for API keys and environment variables.
+
+### 3. Utilities (`geotrade_core/utils/`)
+- **Prompts**: Specialized prompt templates optimized for Moroccan port logistics (Tangier Med, Casablanca) and trade relations.
+- **Helpers**: Shared logic for text cleaning, deduplication, and JSON parsing from LLM responses.
+
+---
+
+## 🔄 Data Flow
+
+```mermaid
+graph TD
+    A[User Input] --> B[News Aggregator]
+    B --> C[LLM Filter]
+    C --> D[Severity Scorer]
+    D --> E[Weather Service]
+    E --> F[Database Storage]
+    F --> G[Dashboard UI]
+```
+
+## 🔍 Key Insights
+
+- **Morocco Optimization**: The system is specifically calibrated to consider shipping routes like the Strait of Gibraltar and major Moroccan ports.
+- **Hybrid AI Approach**: Uses local LLMs (Ollama) to ensure data privacy and reduce API costs, while leveraging high-quality news sources.
+- **Risk Multi-Factor**: Combines news-based geopolitical analysis with real-time weather alerts for a multi-dimensional risk model.
+
 ## Project Structure
 
 ```
 geotrade ai/
+├── main.py                      # PortNet Edition (Monolithic CLI)
 ├── app.py                      # Main Flask application
-├── config.py                   # Configuration management
 ├── requirements.txt            # Python dependencies
 ├── .env.example               # Environment variables template
-├── geotrade.db                # SQLite database (created on first run)
+├── data/                       # JSON data storage
+│   └── portnet_assessments.json # Analysis history
 │
-├── models/
-│   └── database.py            # Database models and operations
-│
-├── services/
-│   ├── news_aggregator.py     # News fetching from APIs
-│   ├── weather_service.py     # Weather data integration
-│   ├── llm_filter.py          # Ollama-based filtering
-│   └── severity_scorer.py     # Risk severity assessment
-│
-├── utils/
-│   ├── prompts.py             # LLM prompt templates
-│   └── helpers.py             # Utility functions
-│
-├── templates/
-│   └── index.html             # Main dashboard template
-│
-└── static/
-    ├── css/
-    │   └── style.css          # Custom styles
-    └── js/
-        └── main.js            # Frontend JavaScript
+├── geotrade_core/
+│   ├── app.py                  # Core Flask app logic
+│   ├── config.py               # Configuration management
+│   ├── models/
+│   │   └── database.py         # JSON storage handler
+│   ├── services/
+│   │   ├── news_aggregator.py  # News fetching
+│   │   ├── weather_service.py  # Weather data
+│   │   ├── llm_filter.py      # LLM-based filtering
+│   │   └── severity_scorer.py  # Risk assessment
+│   └── utils/
+│       ├── prompts.py          # LLM templates
+│       └── helpers.py          # Utilities
+└── static/ & templates/       # Frontend assets
 ```
 
 ## Troubleshooting

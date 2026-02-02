@@ -1,0 +1,142 @@
+[
+  {
+    "status": "completed",
+    "product": "Phosphate Fertilizers",
+    "source_country": "Russia",
+    "destination": "Morocco",
+    "summary": {
+      "overall_risk": "Moyen",
+      "risk_score": 6.0,
+      "message": "Analyse opérationnelle PortNet terminée",
+      "top_concerns": [
+        "Trump threatens 50% tariff on Canadian planes sold in U.S....",
+        "3 big hurdles undermine Trump’s plan to extract Greenland’s ...",
+        "Jingsourcing Report: China’s Record $6.3 Trillion Trade Valu..."
+      ]
+    },
+    "portnet_alerts": [
+      {
+        "level": "warning",
+        "message": "⚠️  RISQUE MODÉRÉ : Trump threatens 50% tariff on Canadian planes sold in U.S....",
+        "action": "📋 Vérifier code SH et droits applicables sur PortNet avant clearance"
+      }
+    ],
+    "weather_source_country": {
+      "text": "Météo Russia: Light snow, -17.8°C. Vent: 11.5 km/h",
+      "raw": {
+        "last_updated_epoch": 1770041700,
+        "last_updated": "2026-02-02 17:15",
+        "temp_c": -17.8,
+        "temp_f": -0.0,
+        "is_day": 0,
+        "condition": {
+          "text": "Light snow",
+          "icon": "//cdn.weatherapi.com/weather/64x64/night/326.png",
+          "code": 1213
+        },
+        "wind_mph": 7.2,
+        "wind_kph": 11.5,
+        "wind_degree": 265,
+        "wind_dir": "W",
+        "pressure_mb": 1009.0,
+        "pressure_in": 29.8,
+        "precip_mm": 0.05,
+        "precip_in": 0.0,
+        "humidity": 77,
+        "cloud": 50,
+        "feelslike_c": -25.2,
+        "feelslike_f": -13.3,
+        "windchill_c": -20.5,
+        "windchill_f": -5.0,
+        "heatindex_c": -14.0,
+        "heatindex_f": 6.9,
+        "dewpoint_c": -14.7,
+        "dewpoint_f": 5.5,
+        "vis_km": 10.0,
+        "vis_miles": 6.0,
+        "uv": 0.0,
+        "gust_mph": 11.3,
+        "gust_kph": 18.1,
+        "short_rad": 0,
+        "diff_rad": 0,
+        "dni": 0,
+        "gti": 0
+      }
+    },
+    "articles": [
+      {
+        "source": "NewsAPI",
+        "title": "Trump threatens 50% tariff on Canadian planes sold in U.S.",
+        "description": "Trump threatens 50% tariff on Canadian planes sold in U.S.theglobeandmail.com",
+        "url": "https://www.theglobeandmail.com/business/article-donald-trump-tariffs-aircraft-decertify-gulfstream-bombardier/",
+        "published_at": "2026-01-30T01:42:01Z",
+        "relevance_score": 0.308,
+        "severity_score": 6.0,
+        "category": "customs_policy",
+        "confidence": "high",
+        "reasoning": "Base:5 × Maroc:1.0x + Urgence:1 = 6.0/10",
+        "portnet_action": "📋 Vérifier code SH et droits applicables sur PortNet avant clearance",
+        "impact_on_clearance": "medium"
+      },
+      {
+        "source": "NewsAPI",
+        "title": "3 big hurdles undermine Trump’s plan to extract Greenland’s mineral wealth—and America’s fraying relationship with Europe is one of them",
+        "description": "America's sourcing relationship with the EU, logistics and anti-mining sentiment make mining in Greenland challenging.",
+        "url": "https://fortune.com/2026/01/30/three-big-hurdles-trump-plan-mining-greenland-rare-earth-minerals-europe-china/",
+        "published_at": "2026-01-30T20:29:46Z",
+        "relevance_score": 0.302,
+        "severity_score": 4.0,
+        "category": "supply_chain",
+        "confidence": "high",
+        "reasoning": "Base:3 × Maroc:1.0x + Urgence:1 = 4.0/10",
+        "portnet_action": "✅ Aucune action immédiate requise",
+        "impact_on_clearance": "low"
+      },
+      {
+        "source": "NewsAPI",
+        "title": "Jingsourcing Report: China’s Record $6.3 Trillion Trade Value Reflects Supply Chain Resilience and Structural Upgrades",
+        "description": "Yiwu, China, Jan. 26, 2026 (GLOBE NEWSWIRE) -- Yiwu, China, January 22, 2026 – Jingsourcing\r\n, one of the China's leading sourcing and supply chain solutions providers, today released its annual strategic industry outlook. Under the leadership of CEO Zhu Jing…",
+        "url": "https://www.globenewswire.com/news-release/2026/01/27/3226061/0/en/Jingsourcing-Report-China-s-Record-6-3-Trillion-Trade-Value-Reflects-Supply-Chain-Resilience-and-Structural-Upgrades.html",
+        "published_at": "2026-01-27T03:02:00Z",
+        "relevance_score": 0.242,
+        "severity_score": 4.0,
+        "category": "port_operations",
+        "confidence": "high",
+        "reasoning": "Base:3 × Maroc:1.0x + Urgence:1 = 4.0/10",
+        "portnet_action": "✅ Aucune action immédiate requise",
+        "impact_on_clearance": "low"
+      },
+      {
+        "source": "NewsAPI",
+        "title": "Trump’s Plan for Greenland: The Expected Economic Impact on the American Middle Class in the Coming Months",
+        "description": "Greenland has been on the minds of many consumers in the United States over the past couple of weeks, particularly as President Donald Trump issued threats...",
+        "url": "https://finance.yahoo.com/news/trump-plan-greenland-expected-economic-142651255.html",
+        "published_at": "2026-01-26T14:26:51Z",
+        "relevance_score": 0.276,
+        "severity_score": 2.0,
+        "category": "supply_chain",
+        "confidence": "high",
+        "reasoning": "Base:1 × Maroc:1.0x + Urgence:1 = 2.0/10",
+        "portnet_action": "✅ Aucune action immédiate requise",
+        "impact_on_clearance": "low"
+      },
+      {
+        "source": "NewsAPI",
+        "title": "3D Semiconductor Packaging Market Report 2026: Revenues to Grow by $16 Billion at 14.8% CAGR During 2026-2030",
+        "description": "Key opportunities include the growth of high-performance computing, automotive electronics, and IoT applications Key opportunities include the growth of high-performance computing, automotive electronics, and IoT applications",
+        "url": "https://www.globenewswire.com/news-release/2026/01/27/3226698/28124/en/3D-Semiconductor-Packaging-Market-Report-2026-Revenues-to-Grow-by-16-Billion-at-14-8-CAGR-During-2026-2030.html",
+        "published_at": "2026-01-27T15:16:00Z",
+        "relevance_score": 0.22,
+        "severity_score": 2.0,
+        "category": "port_operations",
+        "confidence": "high",
+        "reasoning": "Base:1 × Maroc:1.0x + Urgence:1 = 2.0/10",
+        "portnet_action": "✅ Aucune action immédiate requise",
+        "impact_on_clearance": "low"
+      }
+    ],
+    "analysis_timestamp": "2026-02-02T15:16:18.976663",
+    "id": 1,
+    "created_at": "2026-02-02T15:16:18.976663"
+  }
+]

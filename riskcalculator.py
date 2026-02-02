@@ -14,12 +14,23 @@ from dotenv import load_dotenv
 import ollama
 from sentence_transformers import SentenceTransformer
 
+# Fix Windows encoding issues for emojis/special characters
+if sys.platform == "win32":
+    try:
+        sys.stdout.reconfigure(encoding='utf-8')
+        sys.stderr.reconfigure(encoding='utf-8')
+    except AttributeError:
+        # Fallback for older Python versions
+        import io
+        sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
+        sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8')
+
 # --- 1. Logging ---
 logging.basicConfig(
     level=logging.INFO,
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     handlers=[
-        logging.FileHandler("geotrade_portnet.log"),
+        logging.FileHandler("geotrade_portnet.log", encoding='utf-8'),
         logging.StreamHandler(sys.stderr)
     ]
 )
